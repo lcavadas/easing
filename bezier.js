@@ -27,7 +27,7 @@
  * JavaScript port of Webkit implementation of CSS cubic-bezier(p1x.p1y,p2x,p2y) by http://mck.me
  * http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/platform/graphics/UnitBezier.h
  */
-var Bezier = (function(){
+(function(){
 	'use strict';
 
 	/**
@@ -206,7 +206,7 @@ var Bezier = (function(){
 	};
 
 	// http://www.w3.org/TR/css3-transitions/#transition-timing-function
-	return {
+	Math.Easing.Bezier =  Math.Easing.Bezier || {
 		/**
 		 * @param x {number} the value of x along the bezier curve, 0.0 <= x <= 1.0
 		 * @param duration {number} the duration of the animation in milliseconds
